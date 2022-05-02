@@ -1,0 +1,16 @@
+@use '../base/variables'as *;
+
+@media (max-width: 375px) {
+    .card {
+        font-size: rem(14px);
+    }
+
+    .card__heading {
+        font-size: rem(20px);
+        line-height: 1.5;
+    }
+
+    .card__num {
+        font-size: rem(18px);
+    }
+}
