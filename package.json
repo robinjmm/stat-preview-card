@@ -6,7 +6,7 @@
   "scripts": {
     "devServer": "browser-sync start --server --files css/index.css",
     "sass": "sass --watch scss/app.scss:css/index.css",
-    "sass:watch": "concurrently --kill-others \"npm run sass\" \"npm run devserver\"",
+    "sass:watch": "concurrently --kill-others \"npm run sass\" \"npm run devServer\"",
     "sass:prod": "sass --style=compressed scss/app.scss:css/index.css"
   },
   "repository": {
