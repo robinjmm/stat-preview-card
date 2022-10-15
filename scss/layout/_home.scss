@@ -1,19 +1,19 @@
-@use '../base/variables'as *;
+@use "../base/variables" as *;
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $bg-main;
-    color: $text-color;
-    font-family: $ff-lexend;
-    font-weight: $fw-normal;
-    font-size: rem(15px);
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-normal);
+    font-size: toRem(15px);
     padding: 5vh 0;
 }
 
 main {
     width: 100%;
-    margin-bottom: rem(60px);
+    margin-bottom: toRem(60px);
 }

@@ -1,34 +1,30 @@
-// Colors
-$heading-color: hsl(0, 0%, 100%);
-$text-color: hsla(0, 0%, 100%, 0.75);
-$stats-color: hsla(0, 0%, 100%, 0.6);
-$accent-color: hsl(277, 64%, 61%);
+:root {
+    // Colors
+    --heading-color: hsl(0, 0%, 100%);
+    --text-color: hsla(0, 0%, 100%, 0.75);
+    --stats-color: hsla(0, 0%, 100%, 0.6);
+    --accent-color: hsl(277, 64%, 61%);
 
-$bg-main: hsl(233, 47%, 7%);
-$bg-card: hsl(244, 38%, 16%);
-$bg-overlay: hsla(277, 93%, 28%, 0.5);
+    --bg-main: hsl(233, 47%, 7%);
+    --bg-card: hsl(244, 38%, 16%);
+    --bg-overlay: hsla(277, 93%, 28%, 0.5);
 
-
-// Fonts
-$base-font-size: 16px;
-$ff-inter: 'Inter',
-sans-serif;
-$ff-lexend: 'Lexend Deca',
-sans-serif;
-
-$fw-normal: 400;
-$fw-bold: 700;
-
+    // Fonts
+    --ff-primary: "Inter", sans-serif;
+    --ff-secondary: "Lexend Deca", sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
 
 // Functions
-@function rem($value) {
-    $remValue: calc(($value / $base-font-size) *1rem);
+@function toRem($value) {
+    $remValue: calc(($value / 16px) *1rem);
     @return $remValue;
 }
 
 // $value is the desired size
 // $base is font-size of the parent
-@function em($value, $base) {
+@function toEm($value, $base) {
     $emValue: calc(($value / $base) * 1em);
     @return $emValue;
 }

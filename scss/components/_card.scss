@@ -1,13 +1,13 @@
-@use '../base/variables'as *;
+@use "../base/variables" as *;
 
 .card {
-    border-radius: em(10px, 15px);
-    background-color: $bg-card;
+    border-radius: toEm(10px, 15px);
+    background-color: var(--bg-card);
     margin: 0 auto;
     width: min(90%, 500px);
     overflow: hidden;
     line-height: 1.7;
-    padding-bottom: em(40px, 15px);
+    padding-bottom: toEm(40px, 15px);
 
     &__hero {
         width: 100%;
@@ -15,7 +15,7 @@
     }
 
     &__hero-layer {
-        background-color: $bg-overlay;
+        background-color: var(--bg-overlay);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -36,18 +36,18 @@
     }
 
     &__heading {
-        font-family: $ff-inter;
-        color: $heading-color;
-        font-size: rem(30px);
-        margin-top: em(40px, 25px);
-        margin-bottom: em(20px, 25px);
+        font-family: var(--ff-primary);
+        color: var(--heading-color);
+        font-size: toRem(30px);
+        margin-top: toEm(40px, 25px);
+        margin-bottom: toEm(20px, 25px);
         margin-inline: auto;
         width: 14ch;
         line-height: 1.2;
     }
 
     &__accent {
-        color: $accent-color;
+        color: var(--accent-color);
     }
 
     &__stat-group {
@@ -59,10 +59,10 @@
     }
 
     &__num {
-        color: $heading-color;
-        font-size: rem(24px);
-        font-family: $ff-inter;
-        font-weight: $fw-bold;
+        color: var(--heading-color);
+        font-size: toRem(24px);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-bold);
     }
 
     &__label {
