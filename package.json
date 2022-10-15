@@ -4,7 +4,7 @@
   "description": "A challenge to build a stat preview card component from Frontendmentor.io",
   "main": "index.js",
   "scripts": {
-    "devServer": "browser-sync start --server --files css/index.css",
+    "devServer": "browser-sync start --server --watch",
     "sass": "sass --watch scss/app.scss:css/index.css",
     "sass:watch": "concurrently --kill-others \"npm run sass\" \"npm run devServer\"",
     "sass:prod": "sass --style=compressed scss/app.scss:css/index.css"
