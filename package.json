@@ -1,13 +1,13 @@
 {
   "name": "stat-preview-card",
   "version": "1.0.0",
-  "description": "A challenge to build a stat preview card component from Frontendmentor.io",
+  "description": "My solution for the Stat Preview Card challenge from Frontendmentor.io",
   "main": "index.js",
   "scripts": {
-    "devServer": "browser-sync start --server --watch",
-    "sass": "sass --watch scss/app.scss:css/index.css",
-    "sass:watch": "concurrently --kill-others \"npm run sass\" \"npm run devServer\"",
-    "sass:prod": "sass --style=compressed scss/app.scss:css/index.css"
+    "serve": "browser-sync start --server --watch",
+    "sass": "sass --watch scss/styles.scss:css/styles.css",
+    "sass:serve": "concurrently --kill-others \"npm run sass\" \"npm run serve\"",
+    "prod": "sass --style=compressed scss/styles.scss:css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/robinjmm/stat-preview-card#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
-    "concurrently": "^7.4.0",
-    "sass": "^1.51.0"
+    "concurrently": "^7.4.0"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
   }
 }
