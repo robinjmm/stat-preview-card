@@ -6,8 +6,9 @@
   "scripts": {
     "serve": "browser-sync start --server --watch",
     "sass": "sass --watch scss/styles.scss:css/styles.css",
-    "sass:serve": "concurrently --kill-others \"npm run sass\" \"npm run serve\"",
-    "prod": "sass scss/styles.scss:css/styles.css && postcss css/styles.css -o css/styles.css"
+    "dev": "concurrently \"npm run sass\" \"npm run serve\"",
+    "prod": "sass scss/styles.scss:css/styles.css && postcss css/styles.css -o css/styles.css",
+    "preview": "concurrently \"npm run prod\" \"npm run serve\""
   },
   "repository": {
     "type": "git",
